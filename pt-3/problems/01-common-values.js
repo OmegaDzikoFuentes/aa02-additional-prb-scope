@@ -14,7 +14,31 @@
 */
 
 function commonValues(obj1, obj2) {
-  // Your code here new line
+
+    //create variable to store obj.val of both objs
+    let firstArr = Object.values(obj1);
+
+    let secArr = Object.values(obj2);
+
+    //create empty arr
+    let groupArr = [];
+
+    //use forEach
+    firstArr.forEach(ele => {
+
+    //ask if ele is in both arrs
+        if(secArr.includes(ele)) {
+
+    //if yes push to neew arr
+                groupArr.push(ele);
+
+        }
+
+    });
+
+    //return joined arr
+    return groupArr;
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
