@@ -10,7 +10,36 @@
 */
 
 function characterCount(string) {
-  // Your code here 
+
+    //create empty obj
+    let obj = {};
+
+    //loop through str
+    for (let i = 0; i < string.length; i++) {
+
+    //store curr val in variable
+        let currChar = string[i];
+
+    //ask if val at obj is in obj
+        if(obj[currChar] !== undefined) {
+
+    //if yes icrement val at obj
+            obj[currChar]++;
+
+        }
+
+    //otherwise add val at obj with count of 1
+        else {
+
+            obj[currChar] = 1;
+
+        }
+
+    }
+
+    //return obj
+    return obj;
+
 }
 
 
