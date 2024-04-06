@@ -15,7 +15,33 @@ Least common flavor:
 */
 
 function leastCommonFlavor(candyBag) {
-  // Your code here 
+
+    //set conditional to return null is obj is empty
+    if(Object.values(candyBag).length === 0) {
+
+        return null;
+
+    }
+
+    //retrieve the values using obj.val
+    let valArr = Object.values(candyBag);
+
+    //set minVal of values arr using Math.min
+    let minVal = Math.min(...valArr);
+
+    //loop obj using key in
+    for (let key in candyBag) {
+
+    //ask if key at obj equals min value
+        if(candyBag[key] === minVal) {
+
+    //if yes return key
+                return key;
+
+        }
+
+    }
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
