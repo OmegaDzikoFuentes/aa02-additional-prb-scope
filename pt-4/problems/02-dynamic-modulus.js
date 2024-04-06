@@ -21,7 +21,12 @@
 */
 
 function dynamicModulus(num) {
-  // Your code here 
+
+  return (numToMod) => {
+
+    return numToMod % num;
+  }
+  
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
