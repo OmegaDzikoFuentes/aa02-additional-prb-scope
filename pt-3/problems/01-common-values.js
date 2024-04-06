@@ -10,11 +10,11 @@
     console.log(commonValues(cat, bunny)); // prints ['white']
     console.log(commonValues(cat, human)); // prints [4, 'sushi']
     console.log(commonValues(human, vehicle)); // prints [4]
-    
+
 */
 
 function commonValues(obj1, obj2) {
-  // Your code here 
+  // Your code here new line
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
