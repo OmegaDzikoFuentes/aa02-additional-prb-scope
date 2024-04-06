@@ -3,7 +3,7 @@ All the marbles:
 
     Write a function that takes in any number of marble objects and returns the total weight of all marbles.
     Marble objects are structured as the following:
-    
+
     const marble1 = { color: 'red', weight: 20 };
     const marble2 = { color: 'purple', weight: 100 };
     const marble3 = { color: 'blue', weight: 40 };
@@ -14,7 +14,24 @@ All the marbles:
 */
 
 function allTheMarbles(...marbles) {
-  // Your code here 
+
+    //create a total weight variable starting at zero
+    let totalWeight = 0;
+
+    //loop through given arr
+    for (let i = 0; i < marbles.length; i++) {
+
+    //store curr obj in variable
+        let obj = marbles[i];
+
+    //add the curr weight to the total weight and reassign
+            totalWeight += obj.weight;
+
+    }
+
+    //return total weight
+    return totalWeight;
+    
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
